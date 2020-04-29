@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta NAME="Author" CONTENT="Dominik Maszczyk (Skitionek@gmail.com)">
+	<meta NAME="Designer" CONTENT="Dominik Maszczyk">
+	<meta HTTP-EQUIV="Creation-Date" CONTENT="27/04/2020">
+	<meta charset="UTF-8">
+	<title>Static page for MIT course</title>
+</head>
+<body id="canvas">
+<script>
+	function randomComponent() {
+		return Math.floor(Math.random() * 256);
+	}
+
+	let animationTime = 0;
+
+	window.onload = e => {
+		const body = document.getElementById("canvas");
+
+		function setRandomBackgroundColor() {
+			body.style.transition = animationTime + 's';
+			body.style.backgroundColor = `rgb(${randomComponent()},${randomComponent()},${randomComponent()})`;
+			setTimeout(setRandomBackgroundColor, animationTime * 1000);
+			animationTime = 10 + Math.floor(Math.random() * 10);
+		}
+
+		setRandomBackgroundColor();
+	};
+</script>
+<h1>Hello World!</h1>
+</body>
+</html>

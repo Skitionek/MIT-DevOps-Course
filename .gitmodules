@@ -1,0 +1,9 @@
+[submodule "Module 2/Assigment/repository"]
+	path = Module 2/Assigment/repository
+	url = https://github.com/johntango/pacMan
+[submodule "Module 2/Exercises/1/MIT-course-module-2-Code_curious"]
+	path = Module 2/Exercises/1/MIT-course-module-2-Code_curious
+	url = https://github.com/Skitionek/MIT-course-module-2-Code_curious
+[submodule "Module 2/Exercises/2/Cloud_curious"]
+	path = Module 2/Exercises/2/Cloud_curious
+	url = https://github.com/Skitionek/Cloud_curious
